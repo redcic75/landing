@@ -1,0 +1,13 @@
+.btn-hacker {
+  display: inline-block;
+  background-color: rgb(185, 0, 0);
+  color: white;
+  font-weight: 700;
+  padding: 16px;
+  font-weight: 600;
+  border-radius: 2px;
+}
+
+.btn-hacker:hover {
+  opacity: .8;
+}

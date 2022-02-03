@@ -1,0 +1,99 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@700');
+
+/* Fontawesome */
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+/* Components */
+@import url('components/button.css');
+@import url('components/card.css');
+
+/* Utilities */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+section {
+  margin: 20px 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Custom design below! */
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url('../images/computer-long.jpg');
+  background-size: cover;
+  background-position: top;
+  color: whitesmoke;
+  padding: 20px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.banner p {
+  margin: 20px 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(141, 0, 0, 0.6)),
+  url('../images/keyboard.jpg');
+  background-size: cover;
+}
+
+.footer>.container {  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 20px;
+  height: 80px;
+  color: whitesmoke;
+}
+
+.footer p {
+  margin: 8px 0;
+  font-weight: 500;
+}
+
+.footer ul {
+  display: flex;
+  column-gap: 8px;
+}
+
+.fa-linkedin {
+  color: #0A66C2;
+}
+
+.fa-twitter-square {
+  color: #1E9BF0;
+}
+
+.fa-github {
+  color: whitesmoke;
+}
