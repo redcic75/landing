@@ -12,6 +12,9 @@
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 section {
@@ -33,6 +36,7 @@ a {
 
 ul {
   margin: 0;
+  padding: 0;
 }
 
 li {
@@ -41,7 +45,7 @@ li {
 
 /* Custom design below! */
 .banner {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
   url('../images/computer-long.jpg');
   background-size: cover;
   background-position: top;
@@ -58,7 +62,7 @@ li {
 
 .container {
   width: 80%;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -66,13 +70,14 @@ li {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(141, 0, 0, 0.6)),
   url('../images/keyboard.jpg');
   background-size: cover;
+  margin-top: auto;
 }
 
-.footer>.container {  display: flex;
+.footer>.container {
+  display: flex;
   justify-content: space-between;
   align-content: center;
   padding: 20px;
-  height: 80px;
   color: whitesmoke;
 }
 
@@ -83,6 +88,7 @@ li {
 
 .footer ul {
   display: flex;
+  align-items: center;
   column-gap: 8px;
 }
 
@@ -96,4 +102,22 @@ li {
 
 .fa-github {
   color: whitesmoke;
+}
+
+@media (max-width: 360px) {
+  .footer {
+    height: 300px;
+  }
+
+  .footer>.container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  ul {
+    margin-top: 10px;
+  }
+
 }
